@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "To use this software, please cite it as below."
+title: "TITLE"
+authors:
+  - family-names: "FAMILY NAME"
+    given-names: "GIVEN NAME"
+    affiliation: "Integrative Neuroscience and Cognition Center, Université Paris Cité, CNRS"
+repository-code: "https://github.com/ORG/REPO"
