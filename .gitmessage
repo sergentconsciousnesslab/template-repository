@@ -1,0 +1,7 @@
+# <type>(<scope>): <summary in the imperative, 50 characters at most>
+#
+# Types: feat, fix, docs, style, refactor, test, chore
+#
+# Body: what changed and why (wrap at 72 characters)
+#
+# Footer: references, e.g. "Closes #12"; "BREAKING CHANGE: <description>"
