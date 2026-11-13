@@ -1,0 +1,21 @@
+# Data (never committed, see the contributing guidelines)
+data/
+*.eeg
+*.mat
+*.csv
+*.npz
+*.pkl
+
+# Local configuration and credentials
+.env
+*.local
+
+# Operating system and editors
+.DS_Store
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
