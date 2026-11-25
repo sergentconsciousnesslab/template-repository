@@ -1,7 +1,25 @@
 # <type>(<scope>): <summary in the imperative, 50 characters at most>
-#
-# Types: feat, fix, docs, style, refactor, test, chore
-#
-# Body: what changed and why (wrap at 72 characters)
-#
-# Footer: references, e.g. "Closes #12"; "BREAKING CHANGE: <description>"
+###################################################
+
+# <body: describe what changed and why (wrap at 72 characters)>
+
+######################################################################
+
+# <footer (optional): ref-keyword followed by issue number>
+# <Closes, | Fixes | Refs> #<ID>
+# e.g. "Closes #12"; "BREAKING CHANGE: <description>"
+
+# Prefixes:
+#   feat      adds a functionality
+#   fix       corrects a defect
+#   refactor  restructures code without affecting behaviour
+#   perf      improves performance without affecting behaviour
+#   test      adds or corrects tests
+#   docs      changes the documentation only
+#   style     changes the formatting without affecting behaviour
+#   build     changes the build system, the packaging or the dependencies
+#   config    changes the configuration of a tool, of the automation or of the repository
+#   chore     maintains the repository without touching code, tests or documentation
+#   revert    undoes an earlier commit
+#   merge     merges two branches
+# Comments: lines starting with '#' are ignored by git.
