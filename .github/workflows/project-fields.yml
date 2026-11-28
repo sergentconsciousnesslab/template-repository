@@ -1,0 +1,26 @@
+# Copies the nature of a goal, answered in its form, to the field `Nature` of the GitHub Project
+# "Project tracking", so that the timeline of the team shows the goals of this repository.
+# The workflow runs inside the organization only. It writes to the GitHub Project as a GitHub App
+# of the organization: the variable PROJECT_APP_CLIENT_ID holds its Client ID, and the secret
+# PROJECT_APP_PRIVATE_KEY its private key, both stored in this repository by an administrator.
+
+name: Project fields
+
+on:
+  issues:
+    types: [opened, edited, typed]
+
+permissions: {}
+
+jobs:
+  tracking:
+    if: ${{ github.repository_owner == 'sergentconsciousnesslab' }}
+    uses: esther-poniatowski/apoikia/.github/workflows/project-fields.yml@main
+    with:
+      organization: sergentconsciousnesslab
+      project-number: 2
+      issue-types: Goal
+      fields: '{"Nature": "Nature"}'
+      app-client-id: ${{ vars.PROJECT_APP_CLIENT_ID }}
+    secrets:
+      app_private_key: ${{ secrets.PROJECT_APP_PRIVATE_KEY }}
